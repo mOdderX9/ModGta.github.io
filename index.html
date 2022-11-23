@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Go Away</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="media/logo.png" alt="logo.png">
+                <ul>
+                    <li><a href="#">NOTHING</a></li>
+                    <li><a href="#">NOTHING</a></li>
+                    <li><a href="#">NOTHING</a></li>
+                    <li><a href="#">NOTHING</a></li>
+                    <li><a href="#">NOTHING</a></li>
+                </ul>
+            
+            </div>
+            <div class="content">
+            <div class="left-col">
+                <h1> <br>Gae?</br> </h1>
+            </div>
+            <div class="right-col"></div>
+            <p>Click and get hacked</p>
+            <img src="media/play.png.png" id="icon">
+        </div>
+
+    </div>
+
+    <audio id="gethacked">
+        <source src="media/songa.mp3" type="audio/mp3">
+    </audio>
+
+<script>
+    var gethacked = document.getElementById("gethacked");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        if(gethacked.paused){
+            gethacked.play();
+            icon.src = "media/pause.png";
+        }else{
+            gethacked.pause();
+            icon.src = "media/play.png";
+        }
+    }
+
+</script>
+
+</body>
+</html>
